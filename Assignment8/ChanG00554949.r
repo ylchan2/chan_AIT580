@@ -111,6 +111,7 @@ legend("topleft",
 
 
 # 5a Is the correlation different for each gender? 
+# Male and Female have a similar correlation in which the line increases from left to right, bottom to top. In the lower year, male have less salary. In Older years, males have more salary. The breaking point is around 2 years.
 xlim <- range(c(dataa$StSalary))
 ylim <- range(c(dataa$Years))
 
@@ -121,13 +122,8 @@ dataaf = subset(dataa,Gender=="F")
 points(dataaf$Year ~ dataaf$StSalary , data = dataaf,col=c("Red"), xlim=xlim, ylim=ylim)
 abline(lm(dataaf$Year ~ dataaf$StSalary), col = "Red", lwd = 3)
 
-legend("topleft",         
-       legend = c("Female", "Male"),
-       col = c("red", "Blue"),
-       pch = c(16, 8))
-
-
 # 5b Is the correlation different for each degree? 
+# The correlation for each degree is lower. For PhD, the salary is much higher than MS and even more for BS.
 xlim <- range(c(dataa$StSalary))
 ylim <- range(c(dataa$Years))
 
@@ -151,5 +147,5 @@ legend("topleft",
        col = c("Red", "Blue","Green"),
        pch = c(16, 8))
 
-
+# If we look at the graph for 5a alone, Acme has gender bias and Male have more monthly salary than females. On the other hand, in the 5b graph which compares education, we can see having a higher salary and also having higher education. There are more male with PhD than females which is why male have more salary than females. The bias is based on education after all.
 
