@@ -121,6 +121,12 @@ dataaf = subset(dataa,Gender=="F")
 points(dataaf$Year ~ dataaf$StSalary , data = dataaf,col=c("Red"), xlim=xlim, ylim=ylim)
 abline(lm(dataaf$Year ~ dataaf$StSalary), col = "Red", lwd = 3)
 
+legend("topleft",         
+       legend = c("Female", "Male"),
+       col = c("red", "Blue"),
+       pch = c(16, 8))
+
+
 # 5b Is the correlation different for each degree? 
 xlim <- range(c(dataa$StSalary))
 ylim <- range(c(dataa$Years))
