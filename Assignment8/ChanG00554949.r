@@ -27,7 +27,7 @@ print(paste("WorkLifeBalance=1:",length(which(data$WorkLifeBalance == 1))))
 
 # f. What percent of total employees have TotalWorkingYears less than equal to 5? Also calculate the percentage for TotalWorkingYears greater than 5 (5 points)
 print(paste("TotalWorkingYear<=five",sprintf("%0.1f%%",length(which(data$TotalWorkingYears <=5))/length(data$TotalWorkingYears)*100)))
-print(paste("TotalWorkingYear<=five",sprintf("%0.1f%%",length(which(data$TotalWorkingYears >5))/length(data$TotalWorkingYears)*100)))
+print(paste("TotalWorkingYear>five",sprintf("%0.1f%%",length(which(data$TotalWorkingYears >5))/length(data$TotalWorkingYears)*100)))
 
 # g. Print EmployeeNumber, Department and MaritalStatus for those employees whose Attrition is Yes and RelationshipSatisfaction is 1 and YearsSinceLastPromotion is greater than 3 (10 points)
 print(subset(data,Attrition=="Yes" & RelationshipSatisfaction == 1 & YearsSinceLastPromotion >=3, select=c(EmployeeNumber,Department,MaritalStatus)))
