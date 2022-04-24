@@ -1,5 +1,5 @@
 ###------------------
-###Hypothesis Testing
+### Visualization in R and Tableau
 #Student Name: Yin Lok Chan 
 #GNumber: G00554949 
 ###------------------
