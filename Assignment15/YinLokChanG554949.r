@@ -33,7 +33,7 @@ dd=data.frame(title=c(titles_notag),news_summary=c(news_notag))
 print(dd)
 
 
-write.csv(dd,file="C:/VMShared/b.csv")
+write.csv(dd,file="b.csv")
 
 
 # Assignment 15 Task 3: once you save the CSV file, commit and push it back to your repository (no R scripts involved for Task 3). 
