@@ -5,7 +5,7 @@
 library("selectr")
 library("xml2")
 library("rvest")
-library("plyr")
+#library("plyr")
 
 url <- "https://nytimes.com"
 webpage <- read_html(url)
